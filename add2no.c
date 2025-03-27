@@ -1,11 +1,17 @@
 #include<stdio.h>
 #include<conio.h>
+int add(int a, int b)
+{
+  int c;
+  c= a+b;
+  return c
+}
 void main
 {
-  int a,b,c;
-  printf("Enter two numbers");
-  scanf("%d",&a,"%d" ,&b);
-  c=a+b;
-  printf("Sum =  %d",c);
+  int a, b, p;
+  printf("Enter the numbers to add:");
+  scanf("%d %d", &a, &b);
+  p = add(a,b);
+  printf("%d", p);
   getch();
 }
